@@ -1,0 +1,268 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Poppins", Arial, sans-serif;
+    background: #0a0a0a;
+    color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+header {
+    background: #0d0d0d;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #ff0037;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.insta-top {
+    background: #ff0037;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.insta-top:hover {
+    background: #cc002e;
+    transform: scale(1.07);
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    color: #ff0037;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+
+nav ul li a {
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0037;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.hero h2 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #ff0037;
+    text-shadow: 0 0 15px #ff0037;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn {
+    margin-top: 25px;
+    background: #ff0037;
+    padding: 14px 35px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 0, 55, 0.7);
+}
+
+.btn:hover {
+    background: #d4002f;
+    transform: scale(1.07);
+}
+
+/* PRODUCTS SECTION */
+.products {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* GAME CARD */
+.card {
+    background: #111;
+    padding: 15px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #222;
+    box-shadow: 0 0 15px rgba(255, 0, 55, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin: 15px 0 5px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 0, 55, 0.35);
+    border-color: #ff0037;
+}
+
+.dm-tag {
+    margin-top: 10px;
+    background: #ff0037;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 70px 20px;
+    text-align: center;
+    background: #0f0f0f;
+}
+
+.about h2 {
+    font-size: 40px;
+    color: #ff0037;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.insta-btn {
+    background: #ff0037;
+    padding: 14px 35px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 0, 55, 0.5);
+}
+
+.insta-btn:hover {
+    background: #d4002f;
+    transform: scale(1.07);
+}
+
+.bundle-note {
+    margin-top: 12px;
+    opacity: 0.85;
+}
+
+
+/* Background Video */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+
+
+/* Hero Content (text on top) */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.btn {
+    margin-top: 20px;
+    background: #ff0037;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #cc002e;
+    transform: scale(1.08);
+}
+
+/* Smooth fade + slide animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
